@@ -1,0 +1,342 @@
+      16
+
+Single thread execution time: 0.002 ms
+Multi-threaded execution time: 0 ms
+Mismatch at 0
+
+ Performance counter stats for './rmm data/input_16.in':
+
+            61,664      L1-dcache-load-misses                                       
+            36,034      L1-icache-load-misses                                       
+             1,586      dTLB-load-misses                                            
+               233      iTLB-load-misses                                            
+            35,638      branch-misses                                               
+
+       0.002456767 seconds time elapsed
+
+       0.002529000 seconds user
+       0.000000000 seconds sys
+
+
+    4096
+
+Single thread execution time: 26175.9 ms
+Multi-threaded execution time: 0 ms
+Mismatch at 0
+
+ Performance counter stats for './rmm data/input_4096.in':
+
+    43,259,042,685      L1-dcache-load-misses                                       
+     1,484,867,287      L1-icache-load-misses                                       
+    34,431,628,031      dTLB-load-misses                                            
+           121,622      iTLB-load-misses                                            
+     1,266,648,255      branch-misses                                               
+
+    1930.264811150 seconds time elapsed
+
+    1865.803641000 seconds user
+      53.558248000 seconds sys
+      
+      
+        8192
+ Single thread execution time: 206866 ms
+Multi-threaded execution time: 0 ms
+Mismatch at 0
+
+ Performance counter stats for './rmm data/input_8192.in':
+
+   339,498,811,998      L1-dcache-load-misses                                       
+     5,895,730,790      L1-icache-load-misses                                       
+   257,552,408,064      dTLB-load-misses                                            
+           467,721      iTLB-load-misses                                            
+     4,844,049,271      branch-misses                                               
+
+   15518.603543445 seconds time elapsed
+
+   15246.119216000 seconds user
+     217.650515000 seconds sys
+
+    
+____________along with multi loop order changing________
+    
+      16
+      
+      
+Single thread execution time: 0.003 ms
+Multi-threaded execution time: 0.377 ms
+
+ Performance counter stats for './rmm data/input_16.in':
+
+           107,819      L1-dcache-load-misses                                       
+            49,571      L1-icache-load-misses                                       
+             3,039      dTLB-load-misses                                            
+               741      iTLB-load-misses                                            
+            46,910      branch-misses                                               
+
+       0.005861221 seconds time elapsed
+
+       0.003320000 seconds user
+       0.003320000 seconds sys
+
+
+ 
+ 
+    
+    4096
+ Single thread execution time: 26718.4 ms
+Multi-threaded execution time: 32319.1 ms
+
+ Performance counter stats for './rmm data/input_4096.in':
+
+    45,679,817,857      L1-dcache-load-misses                                       
+     1,449,685,077      L1-icache-load-misses                                       
+    23,783,687,490      dTLB-load-misses                                            
+           146,729      iTLB-load-misses                                            
+     1,218,429,726      branch-misses                                               
+
+    1903.798597791 seconds time elapsed
+
+    2022.686495000 seconds user
+      54.523635000 seconds sys
+
+
+    8192
+    
+    
+ Single thread execution time: 208123 ms
+Multi-threaded execution time: 278539 ms
+
+ Performance counter stats for './rmm data/input_8192.in':
+
+   365,978,220,840      L1-dcache-load-misses                                       
+     6,290,601,804      L1-icache-load-misses                                       
+   256,118,707,130      dTLB-load-misses                                            
+           467,536      iTLB-load-misses                                            
+     5,047,498,119      branch-misses                                               
+
+   15843.801614174 seconds time elapsed
+
+   17180.132249000 seconds user
+     219.032630000 seconds sys
+
+
+
+____________ final optimized with 8 threads__________
+
+-----16------
+Single thread execution time: 0.002 ms
+Multi-threaded execution time: 0.228 ms
+
+ Performance counter stats for './rmm data/input_16.in':
+
+            95,062      L1-dcache-load-misses                                       
+            45,173      L1-icache-load-misses                                       
+             2,349      dTLB-load-misses                                            
+               477      iTLB-load-misses                                            
+            42,045      branch-misses                                               
+
+       0.002656446 seconds time elapsed
+
+       0.003059000 seconds user
+       0.000000000 seconds sys
+
+
+----------4096---------
+
+
+Single thread execution time: 26265.3 ms
+Multi-threaded execution time: 5732.65 ms
+
+ Performance counter stats for './rmm data/input_4096.in':
+
+    46,023,602,742      L1-dcache-load-misses                                       
+     1,313,984,635      L1-icache-load-misses                                       
+    34,420,140,706      dTLB-load-misses                                            
+           316,152      iTLB-load-misses                                            
+     1,192,312,037      branch-misses                                               
+
+    2017.668178872 seconds time elapsed
+
+    1988.315777000 seconds user
+      52.084745000 seconds sys
+
+
+---------8192-----------
+
+Single thread execution time: 211625 ms
+Multi-threaded execution time: 48840.9 ms
+
+ Performance counter stats for './rmm data/input_8192.in':
+
+   363,766,214,012      L1-dcache-load-misses                                       
+     5,815,722,954      L1-icache-load-misses                                       
+   266,529,321,109      dTLB-load-misses                                            
+           433,953      iTLB-load-misses                                            
+     5,114,713,473      branch-misses                                               
+
+   15572.260727208 seconds time elapsed
+
+   15592.450693000 seconds user
+     212.630563000 seconds sys
+
+________with 2 thread_________
+
+------16------
+
+Single thread execution time: 0.004 ms
+Multi-threaded execution time: 0.163 ms
+
+ Performance counter stats for './rmm data/input_16.in':
+
+           120,602      L1-dcache-load-misses                                       
+            33,527      L1-icache-load-misses                                       
+             2,866      dTLB-load-misses                                            
+               418      iTLB-load-misses                                            
+            51,718      branch-misses                                               
+
+       0.005532764 seconds time elapsed
+
+       0.000000000 seconds user
+       0.005810000 seconds sys
+       
+ --------4096------
+ 
+ Single thread execution time: 26251 ms
+Multi-threaded execution time: 13475.3 ms
+
+ Performance counter stats for './rmm data/input_4096.in':
+
+    45,735,504,851      L1-dcache-load-misses                                       
+     1,250,955,828      L1-icache-load-misses                                       
+    34,463,413,303      dTLB-load-misses                                            
+            91,688      iTLB-load-misses                                            
+     1,197,007,724      branch-misses                                               
+
+    1973.615168578 seconds time elapsed
+
+    1920.747057000 seconds user
+      55.049794000 seconds sys
+
+-------8192--------
+
+Single thread execution time: 208062 ms
+Multi-threaded execution time: 110470 ms
+
+ Performance counter stats for './rmm data/input_8192.in':
+
+   362,418,762,220      L1-dcache-load-misses                                       
+     5,682,419,363      L1-icache-load-misses                                       
+   264,239,529,135      dTLB-load-misses                                            
+           395,287      iTLB-load-misses                                            
+     4,896,262,029      branch-misses                                               
+
+   15699.316463003 seconds time elapsed
+
+   15542.784089000 seconds user
+     216.286809000 seconds sys
+
+________with 3 threads_________
+
+------16--------
+
+Single thread execution time: 0.003 ms
+Multi-threaded execution time: 0.179 ms
+Mismatch at 16
+
+ Performance counter stats for './rmm data/input_16.in':
+
+            69,290      L1-dcache-load-misses                                       
+            39,055      L1-icache-load-misses                                       
+             1,873      dTLB-load-misses                                            
+               396      iTLB-load-misses                                            
+            37,875      branch-misses                                               
+
+       0.004542665 seconds time elapsed
+
+       0.000000000 seconds user
+       0.004869000 seconds sys
+
+--------4096-------
+
+Single thread execution time: 26245.3 ms
+Multi-threaded execution time: 8818.29 ms
+Mismatch at 1396736
+
+ Performance counter stats for './rmm data/input_4096.in':
+
+    45,953,610,300      L1-dcache-load-misses                                       
+     1,227,335,258      L1-icache-load-misses                                       
+    30,619,781,308      dTLB-load-misses                                            
+           100,889      iTLB-load-misses                                            
+     1,216,055,349      branch-misses                                               
+
+    1903.763366650 seconds time elapsed
+
+    1858.383375000 seconds user
+      51.289112000 seconds sys
+
+________with 4 threads_________
+
+-------16-------
+
+
+Single thread execution time: 0.002 ms
+Multi-threaded execution time: 0.163 ms
+
+ Performance counter stats for './rmm data/input_16.in':
+
+            81,841      L1-dcache-load-misses                                       
+            37,063      L1-icache-load-misses                                       
+             2,081      dTLB-load-misses                                            
+               397      iTLB-load-misses                                            
+            39,105      branch-misses                                               
+
+       0.003133501 seconds time elapsed
+
+       0.003507000 seconds user
+       0.000000000 seconds sys
+
+
+
+
+-------4096--------
+
+Single thread execution time: 26219.8 ms
+Multi-threaded execution time: 6728.27 ms
+
+ Performance counter stats for './rmm data/input_4096.in':
+
+    46,030,128,846      L1-dcache-load-misses                                       
+     1,246,713,480      L1-icache-load-misses                                       
+    31,836,494,605      dTLB-load-misses                                            
+            95,769      iTLB-load-misses                                            
+     1,246,958,522      branch-misses                                               
+
+    1885.918413165 seconds time elapsed
+
+    1839.954157000 seconds user
+      55.076712000 seconds sys
+      
+-------8192--------
+
+Single thread execution time: 219459 ms
+Multi-threaded execution time: 78516.1 ms
+
+ Performance counter stats for './rmm data/input_8192.in':
+
+   363,848,016,215      L1-dcache-load-misses                                       
+     5,639,438,639      L1-icache-load-misses                                       
+   258,718,784,588      dTLB-load-misses                                            
+         1,412,851      iTLB-load-misses                                            
+     5,490,440,148      branch-misses                                               
+
+   15770.110331699 seconds time elapsed
+
+   15738.867941000 seconds user
+     227.582878000 seconds sys
+
+_______with 5 threads_______
+
+-------16-------
+
+
